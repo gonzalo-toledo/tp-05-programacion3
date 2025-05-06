@@ -1,0 +1,318 @@
+/* Estilos Generales */
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Mínimo el alto de la pantalla */
+}
+
+body {
+  background: linear-gradient(135deg, #90afc5, #c8d6e5);
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+
+}
+
+.main-content {
+  flex: 1; /* Que ocupe todo el espacio disponible */
+  padding: 2rem; /* Opcional: le das espacio interno */
+}
+
+/* Enlaces */
+a {
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #000000;
+}
+
+/* Botones */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  margin: 0.2rem;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #2a3132e3;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  border-color: #ffffff;
+  background-color: #2a31327e;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Preferencias para esquema claro */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+}
+
+/* Logo */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Menú de SweetAlert2 */
+.swal-form-container .swal-form-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.swal-form-container label {
+  min-width: 80px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.swal-fixed {
+  width: 350px !important;
+  margin: 0 !important;
+}
+
+/* Estilos para el contenedor principal */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Títulos */
+h1, h2, footer {
+  color: #000000;
+}
+
+
+/* --- MENUBAR --- */
+.p-menubar {
+  background: #ffffff59;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.p-menuitem-text{
+  font-weight: bold;
+  color: #000000;
+  margin-left: 50px;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  transition: background 0.3s;
+  border-radius: 8px;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link:hover {
+  background: #3b4445;
+}
+
+.p-submenu-list{
+  background: #ffffffd5;
+  border-radius: 8px;
+  /* padding: 0.5rem 0; */
+}
+
+
+.p-menubar .p-submenu-list .p-menuitem-link {
+  color: white;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s;
+  border-radius: 8px;
+}
+
+.p-menubar .p-submenu-list .p-menuitem-link:hover {
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+/* home */
+
+.unicorn-image {
+
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  display: block;
+}
+
+footer {
+  margin-top: 20px;
+  position:bottom;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: #ffffff59;
+  border-radius: 8px;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+} 
+
+/* products-list */
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #ffffff59;
+  padding: 1rem; 
+  border-radius: 8px;
+
+}
+
+.fieldsetAddProduct{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 1rem;
+  
+
+}
+
+/* form-unicorns */
+/* Form.css o donde quieras aplicar */
+
+.form-container {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #ffffff59;
+  border-radius: 1%;
+  border: #ffffff solid 1px;  
+}
+
+.form-group {
+  margin-bottom: .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-field {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.error-message {
+  color: #ff4d4f;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+.submit-button {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* table-unicorn */
+/* En tu archivo de estilos */
+
+.custom-datatable {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #ffffff1e;
+  border-radius: 8px;
+  border: #ffffff solid 1px;
+  overflow: hidden;
+  
+}
+
+.custom-datatable .p-datatable-header {
+  background-color: #ffffff59;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align:center;
+  padding: 1rem;
+}
+
+
+.custom-datatable .p-datatable-thead > tr > th {
+  background-color: #ffffff59;
+  color: #000000;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1.5rem;
+  
+}
+
+.custom-datatable .p-datatable-tbody > tr > td {
+  font-size: 0.95rem;
+  padding: 0.75rem;
+}
+
+
+.custom-datatable .p-paginator {
+  background-color: #ffffff59;
+  padding: 1rem;
+
+}
